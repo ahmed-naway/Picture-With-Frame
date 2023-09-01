@@ -11,6 +11,7 @@
     grid-template-columns:repeat(2 , max(480px));
     align-items: center;
     justify-content: center;
+    background:linear-gradient(#ffffff , #d3d3d3);
 }
 
 .container .picure {
@@ -112,7 +113,7 @@
     position: absolute;
     bottom: 0px;
     right: 5px;
-    font-size: 48px;
+    font-size: 58px;
     color: #aaa; 
     opacity: .6;
     z-index: -1;
@@ -141,18 +142,31 @@
         padding: 40px;
         gap: 40px;
     }
+
+    .container .text .image-container{
+        justify-content: center;
+    }
+
+    .container .text .image-container .img{
+        margin: 0px 10px;
+    }
 }
 
 @media (max-width:767px){
     .container .picure {
         margin: auto;
-        width: 280px;
+        width: 260px;
         height: 240px;
+    }
+
+    .container .text .image-container{
+        justify-content: center;
     }
 
     .container .text .image-container .img{
         border: 1px #aaa solid;
         padding: 10px 0px 0px;
+        margin: 0px 4px;
         width: 108px;
         height: auto;
        
